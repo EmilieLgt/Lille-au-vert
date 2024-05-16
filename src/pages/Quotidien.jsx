@@ -21,12 +21,13 @@ function Quotidien() {
           <Link to="/" className="linkTo">
             <img
               className="logoAccueil"
-              src="./public/images/home.svg"
+              src="../../../public/images/home.svg"
               alt="icone accueil"
             />
           </Link>
         </div>
         <Filter data={daily} />
+
         {countClick === 10 ? (
           <Sortez />
         ) : (
