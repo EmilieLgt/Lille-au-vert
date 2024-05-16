@@ -7,7 +7,7 @@ export default function ActivitiesContextProvider({ children }) {
   const oneAfternoon = [
     {
       id: 0,
-      name: "Mosaïc, le jardin des cultures",
+      name: "Mosaïc",
       image: "./public/images/oneafternoon/afternoon0.jpg",
       desc: "Au cœur du Parc de la Deûle, se niche un jardin extraordinaire. Bienvenue à Mosaïc, le jardin des cultures ! Fruit du talent des paysagistes Jacques Simon, Yves Hubert et Jean-Noël Capart, Mosaïc raconte et célèbre la diversité culturelle de la métropole lilloise.",
       hashtag: "#BALADE",
@@ -232,7 +232,7 @@ export default function ActivitiesContextProvider({ children }) {
     },
     {
       id: 6,
-      name: "Acheter local à la ferme urbaine Concorde",
+      name: "La ferme urbaine Concorde",
       image: "./public/images/daily/ferme.jpeg",
       city: "Lille",
       desc: "Vente en direct de légumes et de paniers de légumes le mercredi après-midi de 13h à 17h",
