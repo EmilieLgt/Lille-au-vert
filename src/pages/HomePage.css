@@ -1,0 +1,87 @@
+.accueil {
+  display: none;
+}
+
+.introduction {
+  background-color: var(--third-color);
+  padding: 1.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+.question {
+  text-align: center;
+  padding: 2em;
+  font-family: var(--primary-font);
+  font-size: 0.9em;
+}
+.menu {
+  background-color: var(--primary-color);
+}
+.link {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  color: black;
+  background-color: var(--third-color);
+  width: 45%;
+  border-radius: 1em;
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+
+/*            DESKTOP VERSION */
+@media screen and (min-width: 990px) {
+  .page_accueil {
+    background-color: var(--primary-color);
+  }
+  .page_accueil {
+    padding: 0.7em;
+  }
+  .introduction {
+    width: 50vw;
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    font-size: 1.5em;
+  }
+  .question {
+    font-size: 2em;
+  }
+  .link {
+    width: 15%;
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+    color: var(--third-color);
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    font-size: 1.7em;
+  }
+  .links {
+    gap: 1.5em;
+  }
+  .link1 {
+    background-image: url("../../public/images/HomePage/onehour.jpeg");
+  }
+  .link2 {
+    background-image: url("../../public/images/HomePage/afternoon.jpg");
+  }
+  .link3 {
+    background-image: url("../../public/images/HomePage/weekend.jpeg");
+  }
+  .link4 {
+    background-image: url("../../public/images/HomePage/jardinp.png");
+    background-size: cover;
+  }
+}
