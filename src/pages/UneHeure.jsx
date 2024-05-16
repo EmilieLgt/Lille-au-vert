@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import Sortez from "./Sortez";
+import Filter from "../components/Filter";
 import { useContext } from "react";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function UneHeure() {
-  const { oneHour, countClick } = useContext(ActivitiesContext);
+  const { oneHour, countClick, filter } = useContext(ActivitiesContext);
+
+  const oneHourFiltered = filter
+    ? oneHour.filter((activity) => activity.hashtag === filter)
+    : oneHour;
 
   return (
     <>
@@ -21,10 +26,11 @@ function UneHeure() {
             />
           </Link>
         </div>
+        <Filter data={oneHour} />
         {countClick === 10 ? (
           <Sortez />
         ) : (
-          oneHour.map((activity) => (
+          oneHourFiltered.map((activity) => (
             <Card activity={activity} key={activity.id} />
           ))
         )}
