@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
@@ -44,14 +45,14 @@ function HomePage() {
             className="link link2"
             onClick={handleClick}
           >
-            Demi Journée
+            Une demie-journée
           </Link>
           <Link
             to="/activites/weekend"
             className="link link3"
             onClick={handleClick}
           >
-            Week-end
+            Un week-end
           </Link>
           <Link
             to="/activites/quotidien"

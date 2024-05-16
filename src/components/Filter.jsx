@@ -1,4 +1,7 @@
-import React, { useContext } from "react";
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
+import "./filter.css"
+import { useContext } from "react";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 
 function Filter({ data }) {
@@ -13,11 +16,12 @@ function Filter({ data }) {
 
   return (
     <form className="center">
-      <label htmlFor="hashtag-select">
+      <label htmlFor="hashtag-select" className="label-filter">
         Filtrer par
         <select
           id="hashtag-select"
           onChange={(event) => handleChangeFilter(event)}
+          className="filter-select"
         >
           <option value="">---</option>
           {uniqueHashtags.map((option) => (
