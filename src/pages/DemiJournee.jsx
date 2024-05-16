@@ -20,9 +20,11 @@ function DemiJournee() {
             />
           </Link>
         </div>
-        {oneAfternoon.map((activity) => (
-          <Card activity={activity} key={activity.id} />
-        ))}
+        <div className="cards">
+          {oneAfternoon.map((activity) => (
+            <Card activity={activity} key={activity.id} />
+          ))}
+        </div>
       </div>
     </>
   );

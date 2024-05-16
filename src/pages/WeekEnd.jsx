@@ -20,9 +20,11 @@ function WeekEnd() {
             />
           </Link>
         </div>
-        {weekEnd.map((activity) => (
-          <Card activity={activity} key={activity.id} />
-        ))}
+        <div className="cards">
+          {weekEnd.map((activity) => (
+            <Card activity={activity} key={activity.id} />
+          ))}
+        </div>
       </div>
     </>
   );

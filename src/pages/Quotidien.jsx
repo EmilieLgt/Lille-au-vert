@@ -20,9 +20,11 @@ function Quotidien() {
             />
           </Link>
         </div>
-        {daily.map((activity) => (
-          <Card activity={activity} key={activity.id} />
-        ))}
+        <div className="cards">
+          {daily.map((activity) => (
+            <Card activity={activity} key={activity.id} />
+          ))}
+        </div>
       </div>
     </>
   );

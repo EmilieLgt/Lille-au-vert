@@ -20,9 +20,11 @@ function UneHeure() {
             />
           </Link>
         </div>
-        {oneHour.map((activity) => (
-          <Card activity={activity} key={activity.id} />
-        ))}
+        <div className="cards">
+          {oneHour.map((activity) => (
+            <Card activity={activity} key={activity.id} />
+          ))}
+        </div>
       </div>
     </>
   );
