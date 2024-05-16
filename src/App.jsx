@@ -1,11 +1,14 @@
-import { useState } from "react";
-import { ActivitiesProvider } from "./assets/Context/ActivitiesContext";
+import  ActivitiesContextProvider from "./assets/Context/ActivitiesContext";
 import "./App.css";
 
 function App() {
+
+
   return (
     <>
-      <ActivitiesProvider>{/* MAIN ET OUTLET */}</ActivitiesProvider>
+      <ActivitiesContextProvider>
+      {/* MAIN ET OUTLET */}
+      </ActivitiesContextProvider>
     </>
   );
 }
