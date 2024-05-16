@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ActivitiesProvider } from "./assets/Context/ActivitiesContext";
 import "./App.css";
 
