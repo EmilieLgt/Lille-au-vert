@@ -1,0 +1,26 @@
+.pageBlock {
+  background-color: var(--third-color);
+}
+
+.topPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.7em;
+  align-items: center;
+}
+
+.titlePage {
+  font-family: var(--primary-font);
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.logoAccueil {
+  width: 25%;
+}
+
+.linkTo {
+  display: flex;
+  flex-direction: row-reverse;
+}
