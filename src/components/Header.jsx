@@ -2,8 +2,9 @@ import "./header.css";
 
 function Header() {
   return (
-    <>
-      <p className="Brand">Lille au vert</p>
+    <><img className="img-banner" src="./public/images//HomePage/lilleauvert2.svg"></img>
+    <img className="img-banner-mobile" src="./public/images//HomePage/lilleauvertmobile.svg"></img>
+
     </>
   );
 }

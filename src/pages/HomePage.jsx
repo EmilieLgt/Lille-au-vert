@@ -10,12 +10,12 @@ function HomePage() {
   return (
     <div className="page_accueil">
       <p className="introduction">
-       Nous passons en moyenne 3h30 sur notre téléphone par jour. <br/> <br/>  Vous êtes lillois.e et cherchez à vous déconnecter le temps d'une heure, d'une après-midi ou d'un week-end ? Vous êtes au bon endroit !
-       Même en ville, on peut se connecter à la nature ! On vous laisse explorer les activités possibles selon votre temps disponible.
-       <br/> <br/>  Après avoir trouvé votre activité, lâchez ce téléphone ❤️
+       Nous passons en moyenne <span className="bold-text">3h30 sur notre téléphone par jour</span>. <br/> <br/>  Vous êtes<span className="bold-text"> lillois.e et cherchez à vous déconnecter </span>le temps d'une heure, d'une après-midi ou d'un week-end ? Vous êtes au bon endroit !
+       Même en ville, on peut se connecter à la nature. On vous laisse explorer les activités possibles selon votre temps disponible.
+       <br/> <br/> <span className="bold-text">Après avoir trouvé votre activité, lâchez ce téléphone ❤️</span> 
       </p>
       <div className="menu">
-        <p className="question">Combien de temps pour vous déconnecter ?</p>
+        <p className="question">Combien de temps vous accordez-vous pour déconnecter ?</p>
         <Link to="/" className="accueil">
           Accueil
         </Link>

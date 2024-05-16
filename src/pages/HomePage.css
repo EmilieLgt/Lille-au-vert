@@ -10,6 +10,8 @@
   text-align: center;
   font-family: var(--primary-font);
   font-size: 0.8em;
+  border-top:3px rgb(54, 74, 54) solid;
+  margin-top:-0.5vh;
 }
 
 .question {
@@ -45,6 +47,12 @@
   padding-bottom: 2em;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+.question {
+  font-weight: bold;
+}
 /*            DESKTOP VERSION */
 @media screen and (min-width: 990px) {
   .page_accueil {
@@ -55,12 +63,20 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 80vw;
+    border-radius: 0em 0em 1em 1em;
+    border-top:5px rgb(54, 74, 54) solid;
+    margin-top:0;
     
+  }
+
+  .bold-text {
+    font-weight: bold;
   }
   .question {
     font-size: 2em;
+    font-weight: bold;
   }
   .link {
     width: 20vw;
