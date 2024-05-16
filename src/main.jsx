@@ -18,19 +18,19 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/uneHeure",
+        path: "/activites/uneheure",
         element: <UneHeure />,
       },
       {
-        path: "/demiJournee",
+        path: "/activites/demijournee",
         element: <DemiJournee />,
       },
       {
-        path: "/weekend",
+        path: "/activites/weekend",
         element: <WeekEnd />,
       },
       {
-        path: "/quotidien",
+        path: "/activites/quotidien",
         element: <Quotidien />,
       },
     ],

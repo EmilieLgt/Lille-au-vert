@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
+import Sortez from "./Sortez";
+import Filter from "../components/Filter";
 import { useContext } from "react";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function WeekEnd() {
-  const { weekEnd } = useContext(ActivitiesContext);
+  const { weekEnd, countClick, filter } = useContext(ActivitiesContext);
+
+  const weekendFiltered = filter
+    ? weekEnd.filter((activity) => activity.hashtag === filter)
+    : weekEnd;
 
   return (
     <>
@@ -20,10 +26,15 @@ function WeekEnd() {
             />
           </Link>
         </div>
-        <div className="cards">
-          {weekEnd.map((activity) => (
+        <Filter data={weekEnd} />
+          <div className="cards">
+        {countClick === 10 ? (
+          <Sortez />
+        ) : (
+          weekendFiltered.map((activity) => (
             <Card activity={activity} key={activity.id} />
-          ))}
+          ))
+        )}
         </div>
       </div>
     </>

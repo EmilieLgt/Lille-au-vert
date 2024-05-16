@@ -9,6 +9,9 @@
   padding-bottom: 2em;
   text-align: center;
   font-family: var(--primary-font);
+  font-size: 0.8em;
+  border-top: 3px rgb(54, 74, 54) solid;
+  margin-top: -0.5vh;
 }
 
 .question {
@@ -16,6 +19,7 @@
   padding: 2em;
   font-family: var(--primary-font);
   font-size: 0.9em;
+  color: var(--secondary-color);
 }
 .menu {
   background-color: var(--primary-color);
@@ -26,11 +30,14 @@
   font-size: 1em;
   color: black;
   background-color: var(--third-color);
-  width: 45%;
+  width: 45vw;
+  height: 45vw;
   border-radius: 1em;
   text-align: center;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
 .links {
   display: flex;
@@ -40,29 +47,39 @@
   padding-bottom: 2em;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+.question {
+  font-weight: bold;
+}
 /*            DESKTOP VERSION */
 @media screen and (min-width: 990px) {
   .page_accueil {
     background-color: var(--primary-color);
   }
-  .page_accueil {
-    padding: 0.7em;
-  }
+
   .introduction {
-    width: 50vw;
-    border-radius: 1em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
-    font-size: 1.5em;
+    border-radius: 20px;
+    font-size: 1.1em;
+    width: 80vw;
+    border-radius: 0em 0em 1em 1em;
+    border-top: 5px rgb(54, 74, 54) solid;
+    margin-top: 0;
+  }
+
+  .bold-text {
+    font-weight: bold;
   }
   .question {
     font-size: 2em;
+    font-weight: bold;
   }
   .link {
-    width: 15%;
-    padding-top: 4.5em;
-    padding-bottom: 4.5em;
+    width: 20vw;
+    height: 20vw;
     color: var(--third-color);
     text-shadow: 1px 1px 2px black;
     font-weight: bold;
@@ -73,6 +90,7 @@
   }
   .link1 {
     background-image: url("../../public/images/HomePage/onehour.jpeg");
+    background-size: cover;
   }
   .link2 {
     background-image: url("../../public/images/HomePage/afternoon.jpg");
