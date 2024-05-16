@@ -1,7 +1,9 @@
+import "./header.css";
+
 function Header() {
   return (
     <>
-      <p>je suis le titre</p>
+      <p className="Brand">Lille au vert</p>
     </>
   );
 }

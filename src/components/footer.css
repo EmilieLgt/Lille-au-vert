@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.devTitle {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: small;
+  display: flex;
+  align-items: center;
+}
+
+.dev {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: small;
+}
+
+.logoWCS {
+  width: 20%;
+  padding-right: 0.5em;
+}
+
+.devBlock {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 990px) {
+  .logoWCS {
+    width: 8%;
+  }
+}
