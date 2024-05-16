@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
 import { createContext } from "react";
 
 export const ActivitiesContext = createContext();
@@ -241,6 +242,27 @@ export default function ActivitiesContextProvider({ children }) {
     },
   ];
 
+  const [countClick, setCountClick] = useState(0);
+  const clicksLimit = 5;
+  const clicksLimit2 = 7;
+
+  const handleClick = () => {
+    setCountClick(countClick + 1);
+  };
+
+  useEffect(() => {
+    if (countClick === clicksLimit) {
+      alert(
+        "Ouh là, ça commence à faire longtemps que vous êtes là ! Il est temps de sortir et de prendre l'air !"
+      );
+    } else if (countClick === clicksLimit2) {
+      alert(
+        "Toujours là ? Il faut choisir une activité et fermer cette page !"
+      );
+    }
+  }),
+    [countClick];
+
   return (
     <ActivitiesContext.Provider
       value={{
@@ -248,6 +270,7 @@ export default function ActivitiesContextProvider({ children }) {
         daily: daily,
         oneAfternoon: oneAfternoon,
         weekEnd: weekEnd,
+        handleClick: handleClick,
       }}
     >
       {children}
