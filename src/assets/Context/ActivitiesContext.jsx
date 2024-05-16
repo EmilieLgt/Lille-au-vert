@@ -271,6 +271,7 @@ export default function ActivitiesContextProvider({ children }) {
         oneAfternoon: oneAfternoon,
         weekEnd: weekEnd,
         handleClick: handleClick,
+        countClick: countClick,
       }}
     >
       {children}

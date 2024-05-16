@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
+import Sortez from "./Sortez";
 import { useContext } from "react";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function Quotidien() {
-  const { daily } = useContext(ActivitiesContext);
+  const { daily, countClick } = useContext(ActivitiesContext);
 
   return (
     <>
@@ -20,9 +21,13 @@ function Quotidien() {
             />
           </Link>
         </div>
-        {daily.map((activity) => (
-          <Card activity={activity} key={activity.id} />
-        ))}
+        {countClick === 10 ? (
+          <Sortez />
+        ) : (
+          daily.map((activity) => (
+            <Card activity={activity} key={activity.id} />
+          ))
+        )}
       </div>
     </>
   );
