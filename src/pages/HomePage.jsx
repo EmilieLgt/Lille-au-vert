@@ -1,8 +1,12 @@
-/* eslint-disable react/no-unescaped-entities */
+
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./HomePage.css";
 
 function HomePage() {
+  const { handleClick } = useContext(ActivitiesContext);
+
   return (
     <div className="page_accueil">
       <p className="introduction">
@@ -16,16 +20,16 @@ function HomePage() {
           Accueil
         </Link>
         <div className="links">
-          <Link to="/uneHeure" className="link link1">
+          <Link to="/uneHeure" className="link link1" onClick={handleClick}>
             Une heure
           </Link>
-          <Link to="/demiJournee" className="link link2">
-            Une demie-journée
+          <Link to="/demiJournee" className="link link2" onClick={handleClick}>
+            Demi Journée
           </Link>
-          <Link to="/weekend" className="link link3">
-            Un week-end
+          <Link to="/weekend" className="link link3" onClick={handleClick}>
+            Week-end
           </Link>
-          <Link to="/quotidien" className="link link4">
+          <Link to="/quotidien" className="link link4" onClick={handleClick}>
             Au quotidien
           </Link>
         </div>
