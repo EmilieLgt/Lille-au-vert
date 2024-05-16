@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import Card from "../components/Card";
 import { useContext } from "react";
+import Card from "../components/Card";
+import Sortez from "./Sortez";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function DemiJournee() {
-  const { oneAfternoon } = useContext(ActivitiesContext);
+  const { oneAfternoon, countClick } = useContext(ActivitiesContext);
 
   return (
     <>
@@ -20,9 +21,13 @@ function DemiJournee() {
             />
           </Link>
         </div>
-        {oneAfternoon.map((activity) => (
-          <Card activity={activity} key={activity.id} />
-        ))}
+        {countClick === 10 ? (
+          <Sortez />
+        ) : (
+          oneAfternoon.map((activity) => (
+            <Card activity={activity} key={activity.id} />
+          ))
+        )}
       </div>
     </>
   );
