@@ -24,8 +24,10 @@ function DemiJournee() {
             alt="icone accueil"
           />
         </Link>
+    
         <Filter data={oneAfternoon} />
       </div>
+<div className="cards">
       {countClick === 10 ? (
         <Sortez />
       ) : (
@@ -33,6 +35,7 @@ function DemiJournee() {
           <Card activity={activity} key={activity.id} />
         ))
       )}
+    </div>  
     </div>
   );
 }
