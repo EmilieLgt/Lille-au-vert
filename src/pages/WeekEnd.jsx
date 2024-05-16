@@ -21,7 +21,7 @@ function WeekEnd() {
           <Link to="/" className="linkTo">
             <img
               className="logoAccueil"
-              src="./public/images/home.svg"
+              src="../../../public/images/home.svg"
               alt="icone accueil"
             />
           </Link>

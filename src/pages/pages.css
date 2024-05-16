@@ -1,5 +1,6 @@
 .pageBlock {
   background-color: var(--third-color);
+  min-height: 60vh;
 }
 
 .topPage {
@@ -27,8 +28,36 @@
   flex-direction: row-reverse;
 }
 
+.random_intro {
+  font-family: var(--primary-font);
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 1em;
+}
+#button-intro {
+  margin-left: 21%;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  font-size: 0.6em;
+}
+.random {
+  background-color: var(--third-color);
+}
+
 @media screen and (min-width: 990px) {
-  .titlePage {
+  .random {
+    padding-top: 0.2em;
+  }
+  .random_intro {
+    font-size: 1.2em;
+    margin-top: 1.7em;
+  }
+  #button-intro {
+    margin-left: 40%;
+    margin-top: 2%;
+    font-size: 1em;
+
+    .titlePage {
     padding: 0.5em 1.2em;
     font-size: 3.5em;
   }

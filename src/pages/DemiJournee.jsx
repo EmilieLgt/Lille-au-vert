@@ -20,14 +20,15 @@ function DemiJournee() {
         <Link to="/" className="linkTo">
           <img
             className="logoAccueil"
-            src="./public/images/home.svg"
+            src="../../../public/images/home.svg"
             alt="icone accueil"
           />
         </Link>
-    
-        <Filter data={oneAfternoon} />
       </div>
+      <Filter data={oneAfternoon} />
+    
 <div className="cards">
+
       {countClick === 10 ? (
         <Sortez />
       ) : (

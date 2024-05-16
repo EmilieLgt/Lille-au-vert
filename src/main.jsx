@@ -8,6 +8,7 @@ import DemiJournee from "./pages/DemiJournee.jsx";
 import Quotidien from "./pages/Quotidien.jsx";
 import UneHeure from "./pages/UneHeure.jsx";
 import WeekEnd from "./pages/WeekEnd.jsx";
+import RandomActivity from "./pages/RandomActivity.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/activites/quotidien",
         element: <Quotidien />,
+      },
+      {
+        path: "/activites/aleatoire",
+        element: <RandomActivity />,
       },
     ],
   },
