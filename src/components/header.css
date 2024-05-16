@@ -8,7 +8,12 @@
   padding-top: 0.5em;
   padding-bottom: 0.3em;
 }
-
+.img-banner{ 
+  display:none
+}
+.img-banner-mobile{
+  width:100%
+}
 
 /*      DESKTOP VERSION     */
 @media screen and (min-width: 990px) {
@@ -16,4 +21,13 @@
     font-size: 6em;
     padding-top: 0.8em;
   }
+
+  .img-banner{
+    display:initial;
+    width:101.5vw;
+    margin-left:-1%;
+    margin-bottom:-0.5vh
+
+  }
+  .img-banner-mobile{display:none}
 }
