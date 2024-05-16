@@ -124,15 +124,14 @@ table {
 }
 
 :root {
-  /* couleurs */ 
-  --primary-color : #B4C6AD ;
-  --secondary-color : #9B0D0D ;
-  --third-color : #FFEFE3 ;
+  /* couleurs */
+  --primary-color: #b4c6ad;
+  --secondary-color: #9b0d0d;
+  --third-color: #ffefe3;
   --text-color: #332c2c;
 
-  /* polices */ 
-  --h1-font : "Handlee";
-  --primary-font : "Montserrat";
-  --title-font : "Delicious Handrawn" , 
+  /* polices */
+  --h1-font: "Handlee";
+  --primary-font: "Montserrat";
+  --title-font: "Delicious Handrawn";
 }
-
