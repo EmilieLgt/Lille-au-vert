@@ -27,6 +27,7 @@ function WeekEnd() {
           </Link>
         </div>
         <Filter data={weekEnd} />
+          <div className="cards">
         {countClick === 10 ? (
           <Sortez />
         ) : (
@@ -34,6 +35,7 @@ function WeekEnd() {
             <Card activity={activity} key={activity.id} />
           ))
         )}
+        </div>
       </div>
     </>
   );

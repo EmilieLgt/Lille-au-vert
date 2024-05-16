@@ -27,8 +27,9 @@ export default function ActivitiesContextProvider({ children }) {
     },
     {
       id: 2,
-      name: "Ballade en bateau",
-      image: "../../../public/images/oneafternoon/afternoon2.jpg",
+
+      name: "Balade en bateau",
+      image: "./public/images/oneafternoon/afternoon2.jpg",
       desc: "Découvrez la Deûle comme vous ne l’avez jamais vue à bord de bateaux 100% électriques, sans permis et surtout silencieux ! 2 parcours possibles : 1h ou 2h",
       hashtag: "DETENTE",
       link: "https://www.marindeaudouce.fr/base-nautique-de-lille/",

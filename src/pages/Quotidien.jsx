@@ -27,7 +27,7 @@ function Quotidien() {
           </Link>
         </div>
         <Filter data={daily} />
-
+          <div className="cards">
         {countClick === 10 ? (
           <Sortez />
         ) : (
@@ -35,6 +35,7 @@ function Quotidien() {
             <Card activity={activity} key={activity.id} />
           ))
         )}
+        </div>
       </div>
     </>
   );

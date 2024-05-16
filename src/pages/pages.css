@@ -15,6 +15,8 @@
   font-family: var(--primary-font);
   font-size: x-large;
   font-weight: 500;
+  color: var(--secondary-color);
+  padding-left: 0.3em;
 }
 
 .logoAccueil {
@@ -54,5 +56,19 @@
     margin-left: 40%;
     margin-top: 2%;
     font-size: 1em;
+
+    .titlePage {
+    padding: 0.5em 1.2em;
+    font-size: 3.5em;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logoAccueil {
+    width: 45%;
+    padding-right: 1.5em;
   }
 }

@@ -26,6 +26,9 @@ function DemiJournee() {
         </Link>
       </div>
       <Filter data={oneAfternoon} />
+    
+<div className="cards">
+
       {countClick === 10 ? (
         <Sortez />
       ) : (
@@ -33,6 +36,7 @@ function DemiJournee() {
           <Card activity={activity} key={activity.id} />
         ))
       )}
+    </div>  
     </div>
   );
 }

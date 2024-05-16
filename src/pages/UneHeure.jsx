@@ -27,6 +27,7 @@ function UneHeure() {
           </Link>
         </div>
         <Filter data={oneHour} />
+          <div className="cards">
         {countClick === 10 ? (
           <Sortez />
         ) : (
@@ -34,6 +35,7 @@ function UneHeure() {
             <Card activity={activity} key={activity.id} />
           ))
         )}
+        </div>
       </div>
     </>
   );
