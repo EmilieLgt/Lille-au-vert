@@ -56,7 +56,7 @@
   background-color: var(--secondary-color);
   padding: 10px 20px;
   border: none;
-  box-shadow: none;
+  box-shadow: rgb(88, 56, 56) 0px 5px 0px;
   border-radius: 30px;
   margin-top: 1em;
   cursor: pointer;
@@ -75,7 +75,6 @@
     gap: 1em;
     padding: 0;
   }
-
   .card-title {
     color: var(--secondary-color);
     font-size: 3em;
@@ -86,12 +85,14 @@
     width: 90%;
   }
 
+
   .card-image {
     width: 18vw;
     height: 18vw;
     object-fit: cover;
     border-radius: 30px;
   }
+
   .card-infos {
     color: var(--primary-color);
     display: flex;
@@ -110,7 +111,7 @@
   .card-description {
     width: 100%;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .card-button {

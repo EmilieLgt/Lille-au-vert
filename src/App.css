@@ -134,3 +134,8 @@ table {
   --primary-font: "Montserrat";
   --title-font: "Delicious Handrawn";
 }
+
+button:hover{
+  transform:scale(1.1)
+
+}
