@@ -122,3 +122,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+:root {
+  /* couleurs */ 
+  --primary-color : #B4C6AD ;
+  --secondary-color : #9B0D0D ;
+  --third-color : #FFEFE3 ;
+  --text-color: #332c2c;
+
+  /* polices */ 
+  --h1-font : "Handlee";
+  --primary-font : "Montserrat";
+  --title-font : "Delicious Handrawn" , 
+}
+
