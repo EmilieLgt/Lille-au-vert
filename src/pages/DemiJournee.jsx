@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
 import Card from "../components/Card";
 import Sortez from "./Sortez";
 import Filter from "../components/Filter";

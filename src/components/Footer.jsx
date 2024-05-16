@@ -3,6 +3,7 @@ import "./footer.css";
 function Footer() {
   return (
     <>
+    <img className="footer-banner"src="../../public/images/HomePage/footerbanner2.svg"/>
       <div className="footer">
         <p className="devTitle">
           Protojam <br /> Developpé en 24h

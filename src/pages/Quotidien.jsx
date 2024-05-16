@@ -29,7 +29,7 @@ function Quotidien() {
         <Filter data={daily} />
         {countClick === 10 ? (
           <Sortez />
-        ) : (
+        ) : (dailyFiltered &&
           dailyFiltered.map((activity) => (
             <Card activity={activity} key={activity.id} />
           ))

@@ -37,4 +37,11 @@
   .logoWCS {
     width: 8%;
   }
+
+  .footer-banner {
+    width:101%;
+    margin-bottom:-1%;
+    margin-left:-0.5%;
+    margin-top:-20%;
+  }
 }
