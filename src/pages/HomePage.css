@@ -10,8 +10,8 @@
   text-align: center;
   font-family: var(--primary-font);
   font-size: 0.8em;
-  border-top:3px rgb(54, 74, 54) solid;
-  margin-top:-0.5vh;
+  border-top: 3px rgb(54, 74, 54) solid;
+  margin-top: -0.5vh;
 }
 
 .question {
@@ -66,9 +66,8 @@
     font-size: 1.1em;
     width: 80vw;
     border-radius: 0em 0em 1em 1em;
-    border-top:5px rgb(54, 74, 54) solid;
-    margin-top:0;
-    
+    border-top: 5px rgb(54, 74, 54) solid;
+    margin-top: 0;
   }
 
   .bold-text {
@@ -91,6 +90,7 @@
   }
   .link1 {
     background-image: url("../../public/images/HomePage/onehour.jpeg");
+    background-size: cover;
   }
   .link2 {
     background-image: url("../../public/images/HomePage/afternoon.jpg");
