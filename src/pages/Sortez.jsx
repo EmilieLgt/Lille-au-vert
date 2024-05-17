@@ -1,14 +1,9 @@
+import "./HomePage.css";
 function Sortez() {
   return (
     <>
-      <p
-        style={{
-          fontSize: "13em",
-          textAlign: "center",
-          fontFamily: "var(--h1-font)",
-        }}
-      >
-        OUST IL FAUT SORTIR MAINTENANT
+      <p className="sortez">
+        OUST <br /> IL FAUT SORTIR MAINTENANT
       </p>
     </>
   );
