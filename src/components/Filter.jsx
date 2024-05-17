@@ -3,6 +3,7 @@
 import "./filter.css"
 import { useContext } from "react";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
+import "./Filter.css";
 
 function Filter({ data }) {
   const { handleChangeFilter } = useContext(ActivitiesContext);
@@ -16,10 +17,11 @@ function Filter({ data }) {
 
   return (
     <form className="center">
-      <label htmlFor="hashtag-select" className="label-filter">
-        Filtrer par
+      <label htmlFor="hashtag-select" className="select label-filter">
+        Filtrer par catégories
         <select
           id="hashtag-select"
+          className="hashtag-select"
           onChange={(event) => handleChangeFilter(event)}
           className="filter-select"
         >
