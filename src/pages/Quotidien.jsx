@@ -7,7 +7,8 @@ import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function Quotidien() {
-  const { daily, countClick, filter } = useContext(ActivitiesContext);
+  const { daily, countClick, filter, handleClick } =
+    useContext(ActivitiesContext);
 
   const dailyFiltered = filter
     ? daily.filter((activity) => activity.hashtag === filter)
@@ -18,7 +19,7 @@ function Quotidien() {
       <div className="pageBlock">
         <div className="topPage">
           <h2 className="titlePage">Au Quotidien</h2>
-          <Link to="/" className="linkTo">
+          <Link to="/" className="linkTo" onClick={handleClick}>
             <img
               className="logoAccueil"
               src="../../../public/images/home.svg"
@@ -27,14 +28,14 @@ function Quotidien() {
           </Link>
         </div>
         <Filter data={daily} />
-          <div className="cards">
-        {countClick === 10 ? (
-          <Sortez />
-        ) : (
-          dailyFiltered.map((activity) => (
-            <Card activity={activity} key={activity.id} />
-          ))
-        )}
+        <div className="cards">
+          {countClick === 6 ? (
+            <Sortez />
+          ) : (
+            dailyFiltered.map((activity) => (
+              <Card activity={activity} key={activity.id} />
+            ))
+          )}
         </div>
       </div>
     </>

@@ -41,28 +41,28 @@ function HomePage() {
           <Link
             to="/activites/uneheure"
             className="link link1"
-            onClick={{ handleClick, handleScroll }}
+            onClick={handleClick}
           >
             Une heure
           </Link>
           <Link
             to="/activites/demijournee"
             className="link link2"
-            onClick={{ handleClick, handleScroll }}
+            onClick={handleClick}
           >
             Une demie-journée
           </Link>
           <Link
             to="/activites/weekend"
             className="link link3"
-            onClick={{ handleClick, handleScroll }}
+            onClick={handleClick}
           >
             Un week-end
           </Link>
           <Link
             to="/activites/quotidien"
             className="link link4"
-            onClick={{ handleClick, handleScroll }}
+            onClick={handleClick}
           >
             Au quotidien
           </Link>
