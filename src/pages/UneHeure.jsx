@@ -7,7 +7,8 @@ import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function UneHeure() {
-  const { oneHour, countClick, filter } = useContext(ActivitiesContext);
+  const { oneHour, countClick, filter, handleClick } =
+    useContext(ActivitiesContext);
 
   const oneHourFiltered = filter
     ? oneHour.filter((activity) => activity.hashtag === filter)
@@ -18,7 +19,7 @@ function UneHeure() {
       <div className="pageBlock">
         <div className="topPage">
           <h2 className="titlePage">Une heure</h2>
-          <Link to="/" className="linkTo">
+          <Link to="/" className="linkTo" onClick={handleClick}>
             <img
               className="logoAccueil"
               src="../../../public/images/home.svg"
@@ -27,14 +28,14 @@ function UneHeure() {
           </Link>
         </div>
         <Filter data={oneHour} />
-          <div className="cards">
-        {countClick === 10 ? (
-          <Sortez />
-        ) : (
-          oneHourFiltered.map((activity) => (
-            <Card activity={activity} key={activity.id} />
-          ))
-        )}
+        <div className="cards">
+          {countClick === 6 ? (
+            <Sortez />
+          ) : (
+            oneHourFiltered.map((activity) => (
+              <Card activity={activity} key={activity.id} />
+            ))
+          )}
         </div>
       </div>
     </>
