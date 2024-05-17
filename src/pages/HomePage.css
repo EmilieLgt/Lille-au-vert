@@ -62,17 +62,28 @@
 }
 
 .link1 {
-background-color: rgb(247, 225, 197);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILrIXziuQcNvu-9Ft_lqliJo9kiplKLUUW9DkUR0bWm4z7k01ZPejXttm_F4bI7BKFQo&usqp=CAU");
+  background-size: cover;
+  color:var(--third-color);
+  font-weight: bold;
 }
 .link2 {
-  background-color: rgb(241, 207, 162);
+  background-image: url("https://i.pinimg.com/originals/a4/fa/e8/a4fae8a1af1b117e6f4c873e1c10f3fe.jpg");
+  color:var(--third-color);
+  font-weight: bold;
 }
 .link3 {
-  background-color: rgb(244, 213, 171);
+  background-image: url("https://www.jardinet.fr/wp-content/uploads/2023/03/Les-feuilles-dautomne-1.jpg");
+  color:var(--third-color);
+  font-weight: bold;
 }
 .link4 {
-  background-color: rgb(248, 204, 146);
+  background-image: url("https://www.theriderpost.com/wp-content/uploads/2018/02/sandgrains.jpg");
+  background-size: cover;
+  color:var(--third-color);
+  font-weight: bold;
 }
+
 
 /*            DESKTOP VERSION */
 @media screen and (min-width: 990px) {

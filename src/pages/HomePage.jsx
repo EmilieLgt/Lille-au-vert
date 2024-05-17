@@ -6,7 +6,7 @@ import "./HomePage.css";
 import QuizzContainer from "./QuizzContainer";
 
 function HomePage() {
-  const { handleClick, handleRandom, handleScroll } =
+  const { handleClick, handleRandom } =
     useContext(ActivitiesContext);
 
   return (
