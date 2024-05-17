@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./quizz.css"
 import { useContext } from "react";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
@@ -8,7 +9,7 @@ function QuizzContainer() {
     return (
         <>
           {wrongAnswer  && messageOk!= 20 ? (
-            <div className="message-quizz">IL EST TEMPS DE SORTIR DE CHEZ VOUS !</div>
+            <div className="message-quizz">Il est temps de sortir de chez vous !</div>
           ) : (
             messageOk != 20 ? (
               <>
@@ -19,7 +20,7 @@ function QuizzContainer() {
                 </div>
               </>
             ) : (
-              <div className="message-quizz">Bravo, mais que faites-vous ici ?!</div>
+              <div className="message-quizz">Bravo <br/> N'hésitez pas à visiter notre site pour d'autres idées !</div>
             )
           )}
         </>
