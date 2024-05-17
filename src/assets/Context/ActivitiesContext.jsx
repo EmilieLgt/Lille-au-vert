@@ -494,16 +494,15 @@ export default function ActivitiesContextProvider({ children }) {
 
   const handleAnswers = () => setWrongAnswer(+1);
 
-  /* Index dans le tableau */ 
+  /* Index dans le tableau */
   const [questionIndex, setQuestionIndex] = useState(0);
 
-  /* Permet d'arreter la boucle des questions */ 
+  /* Permet d'arreter la boucle des questions */
   const [messageOk, setMessageOk] = useState();
 
   const handleQuestions = () => (
     console.log(questionIndex),
-
-    questionIndex < questionsQuizz.length-1
+    questionIndex < questionsQuizz.length - 1
       ? setQuestionIndex(questionIndex + 1)
       : setMessageOk(20)
   );
@@ -548,6 +547,10 @@ export default function ActivitiesContextProvider({ children }) {
     setCountClick(countClick + 1);
   };
 
+  const handleScroll = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <ActivitiesContext.Provider
       value={{
@@ -567,7 +570,8 @@ export default function ActivitiesContextProvider({ children }) {
         handleAnswers: handleAnswers,
         handleQuestions: handleQuestions,
         wrongAnswer: wrongAnswer,
-        messageOk : messageOk
+        messageOk: messageOk,
+        handleScroll: handleScroll,
       }}
     >
       {children}

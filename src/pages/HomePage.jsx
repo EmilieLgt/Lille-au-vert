@@ -6,11 +6,11 @@ import "./HomePage.css";
 import QuizzContainer from "./QuizzContainer";
 
 function HomePage() {
-  const { handleClick, handleRandom } = useContext(ActivitiesContext);
+  const { handleClick, handleRandom, handleScroll } =
+    useContext(ActivitiesContext);
 
   return (
     <div className="page_accueil">
-   
       <p className="introduction">
         Nous passons en moyenne{" "}
         <span className="bold-text">3h30 sur notre téléphone par jour</span>.{" "}
@@ -28,8 +28,8 @@ function HomePage() {
         </span>
       </p>
       <div className="quizz">
-    <QuizzContainer/>
-    </div>
+        <QuizzContainer />
+      </div>
       <div className="menu">
         <p className="question">
           Combien de temps vous accordez-vous pour déconnecter ?
@@ -41,28 +41,28 @@ function HomePage() {
           <Link
             to="/activites/uneheure"
             className="link link1"
-            onClick={handleClick}
+            onClick={{ handleClick, handleScroll }}
           >
             Une heure
           </Link>
           <Link
             to="/activites/demijournee"
             className="link link2"
-            onClick={handleClick}
+            onClick={{ handleClick, handleScroll }}
           >
             Une demie-journée
           </Link>
           <Link
             to="/activites/weekend"
             className="link link3"
-            onClick={handleClick}
+            onClick={{ handleClick, handleScroll }}
           >
             Un week-end
           </Link>
           <Link
             to="/activites/quotidien"
             className="link link4"
-            onClick={handleClick}
+            onClick={{ handleClick, handleScroll }}
           >
             Au quotidien
           </Link>
