@@ -510,12 +510,13 @@ export default function ActivitiesContextProvider({ children }) {
   const quest = questionsQuizz[questionIndex];
   /*      CLICK FUNCTION        */
   const [countClick, setCountClick] = useState(0);
-  const clicksLimit = 5;
-  const clicksLimit2 = 7;
+  const clicksLimit = 2;
+  const clicksLimit2 = 4;
 
   const handleClick = () => {
     setCountClick(countClick + 1);
     setFilter();
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
@@ -547,10 +548,6 @@ export default function ActivitiesContextProvider({ children }) {
     setCountClick(countClick + 1);
   };
 
-  const handleScroll = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <ActivitiesContext.Provider
       value={{
@@ -571,7 +568,6 @@ export default function ActivitiesContextProvider({ children }) {
         handleQuestions: handleQuestions,
         wrongAnswer: wrongAnswer,
         messageOk: messageOk,
-        handleScroll: handleScroll,
       }}
     >
       {children}
