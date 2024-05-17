@@ -3,12 +3,14 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./HomePage.css";
+import QuizzContainer from "./QuizzContainer";
 
 function HomePage() {
   const { handleClick, handleRandom } = useContext(ActivitiesContext);
 
   return (
     <div className="page_accueil">
+   
       <p className="introduction">
         Nous passons en moyenne{" "}
         <span className="bold-text">3h30 sur notre téléphone par jour</span>.{" "}
@@ -25,6 +27,9 @@ function HomePage() {
           Après avoir trouvé votre activité, lâchez ce téléphone ❤️
         </span>
       </p>
+      <div className="quizz">
+    <QuizzContainer/>
+    </div>
       <div className="menu">
         <p className="question">
           Combien de temps vous accordez-vous pour déconnecter ?

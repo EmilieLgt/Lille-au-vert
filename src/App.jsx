@@ -7,17 +7,19 @@ import "./App.css";
 function App() {
   return (
     <>
-      <ActivitiesContextProvider>
-        <header>
-          <Header />
-        </header>
-        <main>
-          <Outlet />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </ActivitiesContextProvider>
+    
+    <ActivitiesContextProvider>
+    <header>
+        <Header />
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </ActivitiesContextProvider>
+    
     </>
   );
 }

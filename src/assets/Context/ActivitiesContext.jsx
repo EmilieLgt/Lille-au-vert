@@ -469,7 +469,46 @@ export default function ActivitiesContextProvider({ children }) {
       hashtag: "PRATIQUE",
     },
   ];
+  const questionsQuizz = [
+    {
+      id: 0,
+      question: "Quand avez-vous touché de l’herbe pour la dernière fois ?",
+      trueanswer: "Aujourd'hui",
+      falseanswer: "Il y a + d'une semaine",
+    },
+    {
+      id: 1,
+      question: "Venez-vous de passer + de 10h/jour devant des écrans ?",
+      trueanswer: "Non",
+      falseanswer: "Oui",
+    },
+    {
+      id: 2,
+      question: "Êtes-vous plus pale que le mur en face de vous ?",
+      trueanswer: "Non",
+      falseanswer: "Oui",
+    },
+  ];
 
+  const [wrongAnswer, setWrongAnswer] = useState();
+
+  const handleAnswers = () => setWrongAnswer(+1);
+
+  /* Index dans le tableau */ 
+  const [questionIndex, setQuestionIndex] = useState(0);
+
+  /* Permet d'arreter la boucle des questions */ 
+  const [messageOk, setMessageOk] = useState(0);
+
+  const handleQuestions = () => (
+    console.log(questionIndex),
+
+    questionIndex < questionsQuizz.length-1
+      ? setQuestionIndex(questionIndex + 1)
+      :     setMessageOk(messageOk===20)
+  );
+
+  const quest = questionsQuizz[questionIndex];
   /*      CLICK FUNCTION        */
   const [countClick, setCountClick] = useState(0);
   const clicksLimit = 5;
@@ -524,6 +563,11 @@ export default function ActivitiesContextProvider({ children }) {
         handleRandom: handleRandom,
         randomActivity: randomActivity,
         activityIndex: activityIndex,
+        quest: quest,
+        handleAnswers: handleAnswers,
+        handleQuestions: handleQuestions,
+        wrongAnswer: wrongAnswer,
+        messageOk : messageOk
       }}
     >
       {children}

@@ -65,7 +65,7 @@
     border-radius: 20px;
     font-size: 1.1em;
     width: 80vw;
-    border-radius: 0em 0em 1em 1em;
+    border-radius: 0em 0em 0em 0em;
     border-top: 5px rgb(54, 74, 54) solid;
     margin-top: 0;
   }
