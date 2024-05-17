@@ -7,8 +7,7 @@ import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function DemiJournee() {
-  const { oneAfternoon, countClick, filter, handleClick } =
-    useContext(ActivitiesContext);
+  const { oneAfternoon, countClick, filter } = useContext(ActivitiesContext);
 
   const oneAfternoonFiltered = filter
     ? oneAfternoon.filter((activity) => activity.hashtag === filter)
@@ -18,7 +17,7 @@ function DemiJournee() {
     <div className="pageBlock">
       <div className="topPage">
         <h2 className="titlePage">Demi-journée</h2>
-        <Link to="/" className="linkTo" onClick={handleClick}>
+        <Link to="/" className="linkTo">
           <img
             className="logoAccueil"
             src="../../../public/images/home.svg"

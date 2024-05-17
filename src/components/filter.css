@@ -1,7 +1,6 @@
 .label-filter {
   font-family: var(--primary-font);
 }
-
 .filter-select {
   padding: 0.5em;
   padding-bottom: 0.5em;
@@ -13,11 +12,9 @@
   background-color: rgb(255, 251, 247);
   border: 2px var(--primary-color) solid;
 }
-
 .center {
   padding: 0.5em 0em 1em 1em;
 }
-
 @media screen and (min-width: 990px) {
   .center {
     padding: 0.5em 0em 1em 5em;

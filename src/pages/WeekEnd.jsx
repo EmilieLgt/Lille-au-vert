@@ -7,8 +7,7 @@ import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function WeekEnd() {
-  const { weekEnd, countClick, filter, handleClick } =
-    useContext(ActivitiesContext);
+  const { weekEnd, countClick, filter } = useContext(ActivitiesContext);
 
   const weekendFiltered = filter
     ? weekEnd.filter((activity) => activity.hashtag === filter)
@@ -19,7 +18,7 @@ function WeekEnd() {
       <div className="pageBlock">
         <div className="topPage">
           <h2 className="titlePage">Week-end</h2>
-          <Link to="/" className="linkTo" onClick={handleClick}>
+          <Link to="/" className="linkTo">
             <img
               className="logoAccueil"
               src="../../../public/images/home.svg"
