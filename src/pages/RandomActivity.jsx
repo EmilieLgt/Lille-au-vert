@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { Link } from "react-router-dom";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import Card from "../components/Card";
 
 function RandomActivity() {
-  const { activity, randomActivity, activityIndex } =
+  const { randomActivity, activityIndex } =
     useContext(ActivitiesContext);
 
   return (
