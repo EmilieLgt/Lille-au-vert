@@ -7,8 +7,7 @@ import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 import "./pages.css";
 
 function UneHeure() {
-  const { oneHour, countClick, filter, handleClick } =
-    useContext(ActivitiesContext);
+  const { oneHour, countClick, filter } = useContext(ActivitiesContext);
 
   const oneHourFiltered = filter
     ? oneHour.filter((activity) => activity.hashtag === filter)
@@ -19,7 +18,7 @@ function UneHeure() {
       <div className="pageBlock">
         <div className="topPage">
           <h2 className="titlePage">Une heure</h2>
-          <Link to="/" className="linkTo" onClick={handleClick}>
+          <Link to="/" className="linkTo">
             <img
               className="logoAccueil"
               src="../../../public/images/home.svg"

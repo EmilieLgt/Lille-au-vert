@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
-import "./filter.css";
+import "./Filter.css";
 import { useContext } from "react";
 import { ActivitiesContext } from "../assets/Context/ActivitiesContext";
 
