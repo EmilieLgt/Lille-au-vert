@@ -1,0 +1,15 @@
+.label-filter {
+    font-family:var(--primary-font);
+}
+
+.filter-select{
+    padding:0.5em;
+    font-family:var(--primary-font) ;
+    margin-left: 1em;
+    border-radius:20px;
+    width:150px;
+    text-align: center;
+    background-color: rgb(255, 251, 247);
+    border: 2px var(--primary-color) solid
+}
+

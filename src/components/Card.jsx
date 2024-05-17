@@ -15,7 +15,7 @@ function Card({ activity }) {
         <div className="info-over-image">
           <h2 className="card-title">{activity.name}</h2>
           <div className="card-infos">
-            <p className="card-hashtag">{activity.hashtag}</p>{" "}
+            <p className="card-hashtag">#{activity.hashtag}</p>{" "}
             <p className="card-city">{activity.city}</p>
           </div>
         </div>
