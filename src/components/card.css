@@ -1,6 +1,5 @@
 .single-card {
   font-family: var(--primary-font);
-  margin-bottom: 1em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -84,7 +83,6 @@
     background-color: var(--third-color);
     width: 90%;
   }
-
 
   .card-image {
     width: 18vw;
