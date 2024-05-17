@@ -7,7 +7,7 @@ function QuizzContainer() {
 
     return (
         <>
-          {wrongAnswer ? (
+          {wrongAnswer  && messageOk!= 20 ? (
             <div className="message-quizz">IL EST TEMPS DE SORTIR DE CHEZ VOUS !</div>
           ) : (
             messageOk != 20 ? (
@@ -19,7 +19,7 @@ function QuizzContainer() {
                 </div>
               </>
             ) : (
-              <div className="message-quizz">Que faites-vous ici ?!</div>
+              <div className="message-quizz">Bravo, mais que faites-vous ici ?!</div>
             )
           )}
         </>

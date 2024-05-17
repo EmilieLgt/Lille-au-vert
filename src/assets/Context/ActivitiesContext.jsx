@@ -498,14 +498,14 @@ export default function ActivitiesContextProvider({ children }) {
   const [questionIndex, setQuestionIndex] = useState(0);
 
   /* Permet d'arreter la boucle des questions */ 
-  const [messageOk, setMessageOk] = useState(0);
+  const [messageOk, setMessageOk] = useState();
 
   const handleQuestions = () => (
     console.log(questionIndex),
 
     questionIndex < questionsQuizz.length-1
       ? setQuestionIndex(questionIndex + 1)
-      :     setMessageOk(messageOk===20)
+      : setMessageOk(20)
   );
 
   const quest = questionsQuizz[questionIndex];
