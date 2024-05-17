@@ -20,7 +20,7 @@ function QuizzContainer() {
                 </div>
               </>
             ) : (
-              <div className="message-quizz">Bravo <br/> N'hésitez pas à visiter notre site pour d'autres idées !</div>
+              <div className="message-quizz messagequizz-ok">Bravo <br/> N'hésitez pas à visiter notre site pour d'autres idées !</div>
             )
           )}
         </>
