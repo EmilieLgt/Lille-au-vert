@@ -264,7 +264,7 @@ export default function ActivitiesContextProvider({ children }) {
     },
     {
       id: 2,
-      name: "Ballade en bateau",
+      name: "Balade en bateau",
       image: "../../../public/images/oneafternoon/afternoon2.jpg",
       desc: "Découvrez la Deûle comme vous ne l’avez jamais vue à bord de bateaux 100% électriques, sans permis et surtout silencieux ! 2 parcours possibles : 1h ou 2h",
       hashtag: "DETENTE",
@@ -543,7 +543,7 @@ export default function ActivitiesContextProvider({ children }) {
   const [activityIndex, setActivityIndex] = useState(0);
 
   const handleRandom = () => {
-    const randomIndex = Math.floor(Math.random() * randomActivity.length - 1);
+    const randomIndex = Math.floor(Math.random() * 25);
     setActivityIndex(randomIndex);
     setCountClick(countClick + 1);
   };
