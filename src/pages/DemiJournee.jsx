@@ -20,7 +20,7 @@ function DemiJournee() {
         <Link to="/" className="linkTo">
           <img
             className="logoAccueil"
-            src="../../../public/images/home.svg"
+            src="../../../images/home.svg"
             alt="icone accueil"
           />
         </Link>
