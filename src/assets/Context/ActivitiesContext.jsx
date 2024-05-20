@@ -9,7 +9,7 @@ export default function ActivitiesContextProvider({ children }) {
     {
       id: 0,
       name: "Mosaïc",
-      image: "./public/images/oneafternoon/afternoon0.jpg",
+      image: "../../public/images/oneafternoon/afternoon0.jpg",
       desc: "Au cœur du Parc de la Deûle, se niche un jardin extraordinaire. Bienvenue à Mosaïc, le jardin des cultures ! Fruit du talent des paysagistes Jacques Simon, Yves Hubert et Jean-Noël Capart, Mosaïc raconte et célèbre la diversité culturelle de la métropole lilloise.",
       hashtag: "BALADE",
       link: "https://www.houplin-ancoisne.fr/mes-loisirs-assos/culture/parc-mosaic",
@@ -19,7 +19,7 @@ export default function ActivitiesContextProvider({ children }) {
     {
       id: 1,
       name: "Parc du Héron",
-      image: "../../../public/images/oneafternoon/afternoon1.jpg",
+      image: "../../public/images/oneafternoon/afternoon1.jpg",
       desc: "Le parc du Héron constitue une transition unique entre le milieu urbain et le site agricole préservé et compte 110 hectares d’eau et d’espaces verts. Il abrite la colline des Marchenelles, la Forêt des Anges, ainsi que la Réserve Naturelle Régionale du Héron offrant une diversité ornithologique riche de 200 espèces d’oiseaux.",
       hashtag: "BALADE",
       link: "https://www.villeneuvedascq.fr/le-parc-du-heron",
