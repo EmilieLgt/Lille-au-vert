@@ -9,7 +9,7 @@ export default function ActivitiesContextProvider({ children }) {
     {
       id: 0,
       name: "Mosaïc",
-      image: "../../../public/images/oneafternoon/afternoon0.jpg",
+      image: "./public/images/oneafternoon/afternoon0.jpg",
       desc: "Au cœur du Parc de la Deûle, se niche un jardin extraordinaire. Bienvenue à Mosaïc, le jardin des cultures ! Fruit du talent des paysagistes Jacques Simon, Yves Hubert et Jean-Noël Capart, Mosaïc raconte et célèbre la diversité culturelle de la métropole lilloise.",
       hashtag: "BALADE",
       link: "https://www.houplin-ancoisne.fr/mes-loisirs-assos/culture/parc-mosaic",
