@@ -11,7 +11,7 @@ function Footer() {
         </p>
         <img
           className="logoWCS"
-          src="../../public/images/LogoWildwhite.png"
+          src="../../../images/LogoWildwhite.png"
           alt="logo Wild Code School"
         />
         <div className="devBlock">
